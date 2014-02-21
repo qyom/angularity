@@ -1,0 +1,49 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #000;
+}
+
+#container {
+	margin: auto;
+	width: 1000px;
+	height: 555px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+button {
+	display: block;
+	margin: auto;
+    width: 234px;
+	height: 27px;
+	font-size: 16px;
+}
+
+.elevator {
+	display: none;
+}
+
+.elevator:last-child {
+	display: inline;
+}
+
+.elevator.ng-enter {
+	transition: 0.07s linear width;
+	-webkit-transition: 0.07s linear width;
+	display: inline;
+	width:100%;
+}
+
+.elevator.ng-enter-stagger {
+	transition-delay: 0.05s;
+	-webkit-transition-delay: 0.05s;
+}
+
+.elevator.ng-enter.ng-enter-active {
+	display: inline;
+	width:99.9999999%;
+}
